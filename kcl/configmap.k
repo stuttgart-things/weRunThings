@@ -1,5 +1,5 @@
 """
-ConfigMap for weRunThings
+ConfigMap for run-things
 """
 
 import labels

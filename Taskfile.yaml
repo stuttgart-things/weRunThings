@@ -48,7 +48,7 @@ tasks:
       KO_DOCKER_REPO: ghcr.io/{{ .ORGA_NAME }}/{{ .PROJECT_NAME }}
     cmds:
       - |
-        BUILD_IMAGE=$(ko build {{ .MODULE }} --image-label org.opencontainers.image.source=https://github.com/stuttgart-things/weRunThings --push)
+        BUILD_IMAGE=$(ko build {{ .MODULE }} --image-label org.opencontainers.image.source=https://github.com/stuttgart-things/run-things --push)
         echo ${BUILD_IMAGE}
         dagger call -m github.com/jpadams/daggerverse/trivy@v0.3.0 scan-image --image-ref ${BUILD_IMAGE}
 

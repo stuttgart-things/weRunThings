@@ -2,7 +2,7 @@ apiVersion: github.stuttgart-things.com/v1
 kind: ServicePortal
 metadata:
   name: portal-labul
-  namespace: werunthings
+  namespace: run-things
 spec:
   services:
     - name: ArgoCD

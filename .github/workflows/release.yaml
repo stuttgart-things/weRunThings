@@ -26,5 +26,5 @@ jobs:
       push-kustomize: true
       kcl-source-dir: kcl
       kcl-profile-file: tests/kcl-deploy-profile.yaml
-      kustomize-oci-repo: ghcr.io/stuttgart-things/werunthings-kustomize
+      kustomize-oci-repo: ghcr.io/stuttgart-things/run-things-kustomize
     secrets: inherit # pragma: allowlist secret

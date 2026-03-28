@@ -1,5 +1,5 @@
 """
-Namespace for weRunThings
+Namespace for run-things
 """
 
 import labels

@@ -10,7 +10,7 @@ import (
 	"os"
 
 	"github.com/pterm/pterm"
-	"github.com/stuttgart-things/weRunThings/internal"
+	"github.com/stuttgart-things/run-things/internal"
 
 	"google.golang.org/grpc"
 )

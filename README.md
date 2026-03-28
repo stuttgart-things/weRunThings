@@ -1,8 +1,8 @@
-# weRunThings
+# run-things
 
 Service portal & health monitor for infrastructure services. Provides a real-time dashboard with health checks, TLS certificate monitoring, and cluster inventory tracking.
 
-<img src="https://raw.githubusercontent.com/stuttgart-things/docs/main/hugo/sthings-cinema%20wide.png" alt="weRunThings" width="200">
+<img src="https://raw.githubusercontent.com/stuttgart-things/docs/main/hugo/sthings-cinema%20wide.png" alt="run-things" width="200">
 
 ## Features
 
@@ -108,7 +108,7 @@ apiVersion: github.stuttgart-things.com/v1
 kind: ServicePortal
 metadata:
   name: portal-labul        # matches CONFIG_NAME
-  namespace: werunthings    # matches CONFIG_LOCATION
+  namespace: run-things    # matches CONFIG_LOCATION
 spec:
   services:
     - name: ArgoCD
@@ -165,9 +165,9 @@ task lint
 Version, commit, and build date are injected via ldflags:
 
 ```bash
-go install -ldflags="-X github.com/stuttgart-things/weRunThings/internal.version=v1.0.0 \
-  -X github.com/stuttgart-things/weRunThings/internal.date=$(date -Ih) \
-  -X github.com/stuttgart-things/weRunThings/internal.commit=$(git log -n1 --format=%h)"
+go install -ldflags="-X github.com/stuttgart-things/run-things/internal.version=v1.0.0 \
+  -X github.com/stuttgart-things/run-things/internal.date=$(date -Ih) \
+  -X github.com/stuttgart-things/run-things/internal.commit=$(git log -n1 --format=%h)"
 ```
 
 ## License

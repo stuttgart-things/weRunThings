@@ -1,10 +1,10 @@
 ---
 defaultBaseImage: ghcr.io/stuttgart-things/sthings-alpine:1.23
 builds:
-  - id: weRunThings
+  - id: run-things
     dir: .
     main: main.go
     ldflags:
-      - -s -w -X github.com/stuttgart-things/weRunThings/internal.version={{.Env.VERSION}}
-      - -s -w -X github.com/stuttgart-things/weRunThings/internal.date={{.Env.BUILD_DATE}}
-      - -s -w -X github.com/stuttgart-things/weRunThings/internal.commit={{.Env.COMMIT}}
+      - -s -w -X github.com/stuttgart-things/run-things/internal.version={{.Env.VERSION}}
+      - -s -w -X github.com/stuttgart-things/run-things/internal.date={{.Env.BUILD_DATE}}
+      - -s -w -X github.com/stuttgart-things/run-things/internal.commit={{.Env.COMMIT}}
