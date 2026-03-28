@@ -1,0 +1,5 @@
+---
+config.namespace: werunthings
+config.configName: portal-labul
+config.loadConfigFrom: cr
+config.configLocation: werunthings
