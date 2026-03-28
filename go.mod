@@ -1,4 +1,4 @@
-module github.com/stuttgart-things/weRunThings
+module github.com/stuttgart-things/run-things
 
 go 1.26.0
 

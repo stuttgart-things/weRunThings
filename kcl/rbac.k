@@ -1,5 +1,5 @@
 """
-RBAC resources for weRunThings (Role + RoleBinding for ServicePortal CRs)
+RBAC resources for run-things (Role + RoleBinding for ServicePortal CRs)
 """
 
 import labels

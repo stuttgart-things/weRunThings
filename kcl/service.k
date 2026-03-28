@@ -1,5 +1,5 @@
 """
-Services for weRunThings (gRPC + HTTP)
+Services for run-things (gRPC + HTTP)
 """
 
 import labels

@@ -1,5 +1,5 @@
 """
-HTTPRoute (Gateway API) for weRunThings frontend
+HTTPRoute (Gateway API) for run-things frontend
 """
 
 import labels

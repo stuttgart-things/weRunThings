@@ -1,5 +1,5 @@
 """
-ServiceAccount for weRunThings
+ServiceAccount for run-things
 """
 
 import labels

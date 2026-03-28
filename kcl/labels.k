@@ -1,5 +1,5 @@
 """
-Common labels and configuration for weRunThings resources
+Common labels and configuration for run-things resources
 """
 
 import schema
@@ -18,7 +18,7 @@ _httpRouteHostname = option("config.httpRouteHostname")
 _httpRouteAnnotations = option("config.httpRouteAnnotations") or {}
 
 # Config instance with command-line overrides
-config: schema.WeRunThings = schema.WeRunThings {
+config: schema.RunThings = schema.RunThings {
     if _image:
         image = _image
     if _namespace:
@@ -48,7 +48,7 @@ commonLabels = {
     "app.kubernetes.io/name": config.name
     "app.kubernetes.io/instance": config.name
     "app.kubernetes.io/component": "service-portal"
-    "app.kubernetes.io/part-of": "werunthings"
+    "app.kubernetes.io/part-of": "run-things"
     **config.labels
 }
 

@@ -1,5 +1,5 @@
 """
-Main entry point for weRunThings Kubernetes deployment
+Main entry point for run-things Kubernetes deployment
 Imports all resources and exports manifests
 """
 

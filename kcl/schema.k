@@ -1,16 +1,16 @@
 """
-Schema definition for weRunThings deployment configuration
+Schema definition for run-things deployment configuration
 """
 
-schema WeRunThings:
-    """Configuration for weRunThings Kubernetes deployment"""
+schema RunThings:
+    """Configuration for run-things Kubernetes deployment"""
 
     # Metadata
-    name: str = "werunthings"
-    namespace: str = "werunthings"
+    name: str = "run-things"
+    namespace: str = "run-things"
 
     # Image
-    image: str = "ghcr.io/stuttgart-things/weRunThings:v0.1.0"
+    image: str = "ghcr.io/stuttgart-things/run-things:v0.1.0"
     imagePullPolicy: str = "Always"
 
     # Replicas and resources
@@ -28,7 +28,7 @@ schema WeRunThings:
 
     # Config
     loadConfigFrom: str = "cr"
-    configLocation: str = "werunthings"
+    configLocation: str = "run-things"
     configName: str = "portal-labul"
     serverPort: str = "50051"
 

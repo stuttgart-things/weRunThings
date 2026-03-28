@@ -1,5 +1,5 @@
 """
-Deployment for weRunThings
+Deployment for run-things
 """
 
 import labels
